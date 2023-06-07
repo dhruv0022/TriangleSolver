@@ -21,7 +21,7 @@ namespace TriangleTest
             string expected = "An EQUILATERAL triangle is formed";
 
             // Act
-            string result = Triangle.AnalyzeTriangle(firstAngle,secondAngle,thirdAngle);
+            string result = Triangle.AnalyzeTriangle(firstAngle, secondAngle, thirdAngle);
 
             // Assert
             Assert.AreEqual(expected, result);
