@@ -14,9 +14,9 @@ namespace TriangleTest
         public void AnalyzeTriangle_Input10and10and10_OutputValidEquilateralTriangle()
         {
             // Arrange
-            int firstAngle = 5;
-            int secondAngle = 5;
-            int thirdAngle = 5;
+            int firstAngle = 10;
+            int secondAngle = 10;
+            int thirdAngle = 10;
 
             string expected = "An EQUILATERAL triangle is formed";
 
@@ -72,6 +72,82 @@ namespace TriangleTest
             Assert.AreEqual(expected, result);
         }
 
+        [Test]
+        public void AnalyzeTriangle_Input10and14and16_OutputValidScaleneTriangle()
+        {
+            // Arrange
+            int firstAngle = 10;
+            int secondAngle = 14;
+            int thirdAngle = 16;
 
+            string expected = "A SCALENE triangle is formed";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstAngle, secondAngle, thirdAngle);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+        [Test]
+        public void AnalyzeTriangle_Input12and28and33_OutputValidScaleneTriangle()
+        {
+            // Arrange
+            int firstAngle = 12;
+            int secondAngle = 28;
+            int thirdAngle = 33;
+            string expected = "A SCALENE triangle is formed";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstAngle, secondAngle, thirdAngle);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+        [Test]
+        public void AnalyzeTriangle_Input7and9and13_OutputValidScaleneTriangle()
+        {
+            // Arrange
+            int firstAngle = 7;
+            int secondAngle = 9;
+            int thirdAngle = 13;
+            string expected = "A SCALENE triangle is formed";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstAngle, secondAngle, thirdAngle);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+        [Test]
+        public void AnalyzeTriangle_Input8and12and13_OutputValidScaleneTriangle()
+        {
+            // Arrange
+            int firstAngle = 8;
+            int secondAngle = 12;
+            int thirdAngle = 13;
+            string expected = "A SCALENE triangle is formed";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstAngle, secondAngle, thirdAngle);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+        [Test]
+        public void AnalyzeTriangle_Input14and15and16_OutputValidScaleneTriangle()
+        {
+            // Arrange
+            int firstAngle = 14;
+            int secondAngle = 15;
+            int thirdAngle = 16;
+            string expected = "A SCALENE triangle is formed";
+
+            // Act
+            string result = Triangle.AnalyzeTriangle(firstAngle, secondAngle, thirdAngle);
+
+            // Assert
+            Assert.AreEqual(expected, result);
+        }
+        
     }
 }
